@@ -103,7 +103,7 @@ bool KMP(char *txt,char *pat)
 			if (j != 0)
 				j=lps[j-1];
 			else
-				i=i+1;//No suffix or prefix matches, so start from scratch
+				i=i+1;//No suffix or prefix matches, so move to the next character for comparison
 		}
 		
 	}	
