@@ -5,15 +5,15 @@ Naive pattern searching :- Every string of pattern is searched with source strin
 KMP algorithm :-Worst case of naive searching O(nm) can be reduced by O(n) in KMP algorithm.It is working based on prefix-suffix matches computed for the pattern string needs to be searched.
                
 	       1) Prefix is intial substring of certain length.
-         2) Suffix is final substring of certain length.
+               2) Suffix is final substring of certain length.
 	       3) Prefix-suffix array tells number of suffix matches with the number of prefix of certain substring at the index of array.Eg:- lps[6] tells up to the index 6 in the string
 	          how many prefix-suffix matches. So string of "ABCDABCEF" upto index 6 lps[6]=3 has 3 prefix substring matches with suffix substring which is "ABC".
 
 Steps to find index :-
 
         1) Compute prefix-suffix array for the patter of string.
-	      2) If matches keep moving the index of pattern string and text string.
-	      3) Else find the prefix-suffix matches in the array up to index where pattern string.
+	2) If matches keep moving the index of pattern string and text string.
+	3) Else find the prefix-suffix matches in the array up to index where pattern string.
 	
 	For example:-
 	
